@@ -1,449 +1,175 @@
-<!doctype html>
-<html lang="en">
-
-
-<head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Doodle 2</title>
-    <!--#change the title of the page-->
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.2/d3.min.js"
-        integrity="sha512-oKI0pS1ut+mxQZdqnD3w9fqArLyILRsT3Dx0B+8RVEXzEk3aNK3J3pWlaGJ8MtTs1oiwyXDAH6hG6jy1sY0YqA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <style>
-        td,
-        th {
-            text-align: center;
-            border: 1px solid rgb(3, 3, 3);
-            border-radius: 10%;
-
-        }
-
-        table {
-            margin-top: 30px;
-            width: 100%;
-            border-collapse: collapse;
-
-        }
-    </style>
-</head>
-
-
-<body>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <div class="container">
-
-            <a class="navbar-brand aa" href="">
-                <!--#change-->
-                <h2> Doodle 2 on flow blockchain
-                </h2>
-                <!--#change-->
-            </a>
-            <!--#change brand link and title-->
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link aa" href="index.html">Home</a>
-                        <!--#change-->
-                    </li>
-
-                    <li class="nav-item active aa">
-                        <a class="nav-link" href="page/referrence/about.html">Resource</a>
-                        <!--#change-->
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <header>
-
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <!--#change number of slides-->
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <a class="carousel-item active" target="_blank" href=""
-                    style="background-image: url('page/img/joker.jpg')">
-                    <!--#change image url-->
-                    <div class="carousel-caption">
-                        <h5> </h5>
-                        <!--#change-->
-                        <p style="color :rgb(243, 243, 243); text-align: start;font-weight: bold; font-family:cursive;">
-                        </p>
-                        <!--#change-->
 
-                    </div>
-                </a>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </header>
 
 
 
 
 
-    <!-- Begin Page Content -->
 
+/*header starts */
+  .aa {
+    display: inline-block;
+    margin-bottom: 8px;
+    background-image: linear-gradient(270deg, #ff0420, #d9029d);
+    font-family: Rubik, sans-serif;
+    color: transparent;
+    font-weight: 600;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .bb {
+    display: inline-block;
+    margin-bottom: 8px;
+    background-image: linear-gradient(270deg, #250fe9, #33e3f0);
+    font-family: Rubik, sans-serif;
+    color: transparent;
+    font-weight: 600;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+.carousel-item {
+  height: 65vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/*footer starts */
+
+
+.footer-basic {
+  padding:40px 0;
+  background-color:#ffffff;
+  color:#4b4c4d;
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
 
+#main {
+  position: relative;
+  overflow: hidden;
+}
 
 
+.dropdown-menu {
+color :#2e3a46
+}
+ol {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+li {
+}
+.side {
+  display: block;
+  background: #fff;
+  text-decoration: none;
+  transform-origin: 0 0;
+  transition: transform var(--duration) var(--easing), color var(--duration) var(--easing);
+  transition-delay: var(--delay-out);
+  border-radius: 4px;
+  padding: 1em 1.52em;
+  border-left: 2em solid white;
 
 
 
-    <div class="container">
+}
+.side:hover {
+background: #efefef;
+}
+.sides:hover {
+background: #fff;
+}
 
-        <!-- Page Heading -->
-        <h1 class=" h3 mb-3 mt-5 aa">
-            <h3>What is Doodle 2 </h3>
-        </h1>
+.sub-menu {
+      color :#2e3a46;
+      font-size: .9em;
+      border-left: 2em solid white;
+      padding: .75em;
+      background: linear-gradient(
+          to right,
+          #ddd 2px,
+          #fff 2px
+      );}
+      .sub-menu 
+        :hover {
+          background: linear-gradient(
+              to right,
+              #ddd 2px,
+              #efefef 2px
+          );
+      
+  }
 
-        <div class="row">
-            <div class="col-md-8">
-                <p class="mb-4 " style="margin-top: 50px; font-family:serif">Doodles 2 lets anyone create a uniquely
-                    personalized and endlessly customizable character in the one-of-a-kind style from artist Burnt
-                    Toast.
-                    Doodles 2 characters can have their appearances updated and saved to the blockchain with no
-                    transaction fees. They will incorporate music from the biggest artists that can be unlocked and
-                    utilized. Characters and Wearables from Doodles 2 can easily be bought, traded, or sold.</p>
-                <strong class="mb-1 " style="margin-top: 50px; font-family:serif"> Why Flow blockchain </strong>
 
-                <p class="mb-4 " style="margin-top: 10px; font-family:serif"> The Flow blockchain is a highly scalable
-                    blockchain platform that provides a secure and user-friendly environment for the storage and
-                    transfer of digital assets. Flow is built with a focus on scalability, so it can process
-                    transactions quickly and securely, making it ideal for NFTs. It also provides an easy-to-use
-                    developer platform, so digital artists can easily create and sell their artwork as NFTs.</p>
-            </div>
-            <div class="col-md-4">
-                <img src="page/img/box.jpg" style="width:100% ; height:350;">
 
-            </div>
-        </div>
 
 
-        <div class="row">
 
-            <div class="col-md-4">
-                <img src="https://assets-global.website-files.com/618c953e65cc2ba3f44d1a02/63d0d19cf0864eb26868631c_doodlekit.gif"
-                    style="width:100% ; height:150;">
-            </div>
-            <div class="col-md-8">
-                <p class="mb-4 " style="margin-top: 50px; font-family:serif">On-chain scalability is a requirement for
-                    Doodles 2.
 
-                    Everything you see below is on-chain—the Wearables art, the attributes, the Doodle and its
-                    customization.
 
-                    Mainstream users will endlessly customize their doodles and trade wearables without transaction
-                    fees.</p>
-                <p class="mb-1 " style="margin-top: 10px; font-family:serif">The programming language makes Doodles 2
-                    customization meaningful on-chain.</p>
-                <p class="mb-1 " style="margin-top: 10px; font-family:serif">Customization adds or removes Wearables in
-                    your Doodle’s possession.</p>
-                <p class="mb-1 " style="margin-top: 10px; font-family:serif">This means Doodle is actually wearing its
-                    Wearables on-chain.</p>
 
-            </div>
 
 
 
-        </div>
 
 
-
-
-
-        <div class="row mt-5 mb-5 ">
-
-            <!-- first-box -->
-            <div class="col-md-3 mb-4 ">
-
-                <div class="text-xs font-weight-bold text-primary mb-3 bb "
-                    style="font-size: 20px;box-shadow:0 20px 20px rgba(128, 117, 226, 0.15)">
-                    # Minters </div>
-                <div class="h5 mb-0 font-weight-bold text-gray-800 " id="first-box"
-                    style="padding-left: 35px;font-size: 20px;">1554</div>
-
-            </div>
-
-            <div class="col-md-3 mb-4 ">
-
-                <div class="text-xs font-weight-bold text-primary  mb-3 bb "
-                    style="padding-left: 0px;font-size: 20px;box-shadow:40px 20px 20px rgba(128, 117, 226, 0.15)">
-                    # Minted NFT </div>
-                <div class="h5 mb-0 font-weight-bold text-gray-800  " id="fourth-box"
-                    style="padding-left: 40px;font-size: 20px;">24,974</div>
-
-            </div>
-            <p class="mt-5" style="font-family:serif">As you know, doodle is one of the very successful NFT projects that has decided to expand a part of its ecosystem in the past and has done this expansion in the ecosystem in Blockchain Flow. Now you ask what expansion?
-                doodle decided to whitelist NFTs on Flow Blockchain for its users. These NFTs are wearable for original NFTs and users can make changes on their original NFTs by purchasing them. This led to the expansion of the doodle ecosystem. In addition, this expansion allows users to create their own NFTs, which can be used for various purposes such as trading, making payments, and many more. Furthermore, these new NFTs can be used as a form of collateral for various projects and services. With the whitelisting of NFTs on Flow Blockchain, doodle has opened up new opportunities for its users and the ecosystem.
-            </p>
-            <div class="row mt-5 mb-5 ">
-                <div class="col-md-4" id="chart9909" style="width: 100%; height: 100px;">
-                    <i>
-                        <p class="mb-2 mt-5 bb"> * Number of Toekns based on position</p>
-                    </i>
-                </div>
-                <div class="col-md-4" id="chart9908" style="width: 100%; height: 100px;">
-                    <i>
-                        <p class="mb-2 mt-5 bb"> * Number of Toekns based on Color</p>
-                    </i>
-                </div>
-                <div class="col-md-4" id="chart9907" style="width: 100%; height: 100px;">
-                    <i>
-                        <p class="mb-2 mt-5 bb"> * Number of Toekns based on Template</p>
-                    </i>
-                </div>
-            </div>
-
-
-            <div class="row mt-4 mb-3">
-                <p class="mt-5" style="font-family:serif">As we can see, 1554 wallet addresses have minted nearly 24970 NFTs so far. These NFTs have different features.
-                    Features such as color, template and different positions. Now let's check which one of these features was more popular and more NFTs have that feature.
-                    As you can see, 8320 NFTs were related to feet and the most used and popular color was white.</p>
-                <img calss="col-md-12" src="page/img/birds.png" style="width: 100%; height: 300px;">
-<p  class="mt-5" style="font-family:serif">As we know, after the process of minting NFTs, their buying and selling market also prospers. Therefore, we want to examine the purchase and sale of NFTs in Blockchain Flow</p>
-                <div class="col-md-12" id="chart000" style="width: 100%; height: 100px;">
-                    <i>
-                        <p class="mb-2 mt-5 bb"> * Number of Sale Transactions</p>
-                    </i>
-                </div>
-
-            </div>
-            <p class="mt-5" style="font-family:serif">
-                As we can see, the number of transactions was the highest number of transactions per day on January 31, 2023, and then it decreased rapidly. But the number of transactions quickly reached nearly 350 on February 7, 8, and 9. But then it followed a downward trend again.
-            </p>
-            <div class="row mt-4">
-
-<p class="mt-5" style="font-family:serif">The following charts show other parameters related to the purchase and sale of this set of NFTs on Blockchain Flow. Parameters such as creator fee, the number of buyers and sellers, the volume of buying and selling in dollars and the average of the highest and lowest volume of buying and selling on a daily basis in dollars</p>
-                <div class="col-md-6 mb-5" id="chart111" style="width: 100%; max-height: 100px;"><i>
-                        <p class="mb-2 mt-5 bb"> * Total Creator Fee Volume in $</p>
-                    </i></div>
-
-                <div class="col-md-6 mb-5" id="chart1112" style="width: 100%; max-height: 100px;"><i>
-                        <p class="mb-2 mt-5 bb"> * Number of Buyers (Green) and sellers(Blue)</p>
-                    </i></div>
-
-
-                <div class="col-md-6 mb-5" id="chart1113" style="width: 100%; max-height: 100px;"><i>
-                        <p class="mb-2 mt-5 bb"> * Total Sale Volume in $</p>
-                    </i></div>
-
-                <div class="col-md-6 mb-5" id="chart1114" style="width: 100%; max-height: 100px;"><i>
-                        <p class="mb-2 mt-5 bb"> * Max - Avg - Min Sale Volume in $</p>
-                    </i></div>
-
-            </div>
-            <p class="mt-5" style="font-family:serif">As we have seen in the graphs, the number of buyers and the number of sellers have also decreased after the month of January, which was related to the launch of this NFT project. However, on February 9, the number of sellers reached an unprecedented record. Also, on February 1, nearly $6,000 in revenue was collected through these transactions for the doodle project</p>
-            <p class="mt-5" style="font-family:serif">Also, by looking at the volume of buying and selling on February 1, we realize that nearly 117 thousand dollars were bought and sold, but in recent days this volume of buying and selling has reached less than 500 dollars, which shows a significant decrease.</p>
-
-        </div>
-
-
-
-
-
-        <div class="row mt-5 mb-5 ">
-
-
-
-
-
-
-
-
-
-            <div class="row mt-4">
-                <div class="col-md-12">
-                    <div class="col-md-12 mb-5" id="chart9091" style="width: 100%; height: 100px;"><i>
-                            <p class="mb-2 mt-5 bb"> * Top marketplaces</p>
-                        </i></div>
-
-
-                </div>
-
-
-
-                <p class="mt-5" style="font-family:serif">
-                    The above graph shows the number of transactions, the volume of transactions, the number of buyers and the number of sellers for this NFT collection in different marketplaces. According to this chart, we can see the share of buying and selling of each Place Market. As we can see, Market Place Store Front has the largest share of this buying and selling, which is equivalent to 97%.</p>
-
-                <div class="col-md-12 mb-5" id="chart9090" style="width: 100%; max-height: 100px;"><i>
-                        <p class="mb-2 mt-5 bb"> * Floor Price over time (in Flow)</p>
-                    </i></div>
-                <p class="mt-5" style="font-family:serif">As we can see in the chart above, the floor price of this nft collection has changed a lot over time. So that in the middle of February, it reached its maximum value, that is, nearly 178 Flow tokens. But after that, the floor price has decreased until it has reached less than 40 Flow tokens in recent days.
-                </p>
-
-                <div class="row mt-3  ">
-                    <div class="col-md-6 mb-5" id="chart11" style="width: 100%; max-height: 100px;"><i>
-                            <p class="mb-2 mt-5 bb"> * List of Top Buyers (Volume $)</p>
-                        </i></div>
-
-                    <div class="col-md-6 mb-5" id="chart00" style="width: 100%; max-height: 100px;"><i>
-                            <p class="mb-2 mt-5 bb"> * List of Top Sellers (Volume $) </p>
-                        </i></div>
-
-
-                    <div class="col-md-6 mb-5" id="chart99" style="width: 100%; max-height: 100px;"><i>
-                            <p class="mb-2 mt-5 bb"> * List of Top Buyers (count)</p>
-                        </i></div>
-
-                    <div class="col-md-6 mb-5" id="chart88" style="width: 100%; max-height: 100px;"><i>
-                            <p class="mb-2 mt-5 bb"> * List of Top Sellers (count) </p>
-                        </i></div>
-
-
-                </div>
-
-
-
-
-
-                <div class="row mt-2 mb-5">
-                    <div class="col-md-6" id="chart22" style="width: 80%;height:150px;"></div>
-
-                    <div class="col-md-6" id="chart222" style="width: 80%;height:150px;"></div>
-
-                    <p class="" style="font-family:serif">In the four charts above, you can see the top buyers and sellers in terms of the number of transactions and the volume of transactions. These wallet addresses are actors who have a very important role in this ecosystem and its growth and fall, so knowing these wallet addresses can help a lot.</p>
-
-     
-
-                    <p class="aa mt-5">Conclusion:</p>
-                    <p class="" style="font-family:serif ;"> As we have seen in this article, a short review was done about this collection and the number of purchases and sales, buyers and sellers, volume of purchases and sales. The number of mints and the addresses that minted, famous market polices, top buyers and sellers were checked in terms of the number of transactions and the volume of transactions.
-
-                    </p>
-                    <p class="" style="font-family:serif ;">
-                    In recent days, when the price of nfts of this collection on the Ethereum blockchain has faced a sharp price reduction, checking this collection on the Flow blockchain can be useful and help this ecosystem a lot.
-                </p>
-                </div>
-
-
-
-
-
-
-
-
-
-                <div class="footer-basic">
-                    <footer>
-                        <div class="social">
-                            <a target="_blank" href="https://github.com/lordking1234"><i
-                                    class="icon ion-social-github"></i></a>
-                            <!--#change link -->
-                            <a target="_blank" href="https://twitter.com/MRSoltanii"><i
-                                    class="icon ion-social-twitter"></i></a>
-                            <!--#change link-->
-                            <a target="_blank" href="https://www.linkedin.com/in/mohammad-reza-soltani-62009523b/"><i
-                                    class="icon ion-social-linkedin"></i></a>
-                            <!--#change link-->
-                        </div>
-                        <ul class="list-inline">
-                            <li class="list-inline-item"><a target="_blank" href="https://flipsidecrypto.xyz/">Flipside
-                                </a></li>
-                            <!--#change link & text-->
-                            <li class="list-inline-item"><a target="_blank" href="https://metricsdao.xyz/">Metrics
-                                    dao</a></li>
-                            <li class="list-inline-item"><a target="_blank" href="https://geniidata.com/">Geniidata
-                                    </a></li>
-                            <!--#change link & text-->
-                            <li class="list-inline-item">
-                                <div class="dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        Buy me a coffee 🍵
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                        <li>
-                                            <p class="dropdown-item" style="font-weight:bold ; ">Thanks you 💗</p>
-                                        </li>
-                                        <li>
-                                            <p class="dropdown-item">
-                                                <button onclick="myFunction()" style="border: none; font-weight:400 ; ">
-                                                    Click to copy metamask address <svg
-                                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z">
-                                                        </path>
-                                                        <path
-                                                            d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z">
-                                                        </path>
-                                                    </svg>
-                                                </button>
-                                    </ul>
-                                </div>
-                            </li>
-                            <!--#change link & text-->
-                        </ul>
-                        <p class="copyright">Built by Lordking 👑</p>
-                        <!--#change-->
-                    </footer>
-                </div>
-                </footer>
-                <!--copy to clipbord-->
-                <input type="text" value="0x7af2d9a872cbb1bc19fcbd75a4241776ab63dcca" id="myInput"
-                    style="visibility :hidden">
-                <script>
-                    function myFunction() {
-                        var copyText = document.getElementById("myInput");
-                        copyText.select();
-                        copyText.setSelectionRange(0, 99999);
-                        navigator.clipboard.writeText(copyText.value);
-                    }
-                </script>
-
-
-
-
-
-
-
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-                <script
-                    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-                <link rel="stylesheet" href="index.css">
-                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-                    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-                    crossorigin="anonymous"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.4.1/echarts.min.js"></script>
-                <script src="index.js"></script>
-                <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-
-
-
-</body>
-
-</html>
